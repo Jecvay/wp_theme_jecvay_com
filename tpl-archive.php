@@ -20,9 +20,9 @@ get_header();
                              if ($year != $year_tmp && $year > 0) $output .= '</ul>';   
                              if ($year != $year_tmp) {   
                                  $year = $year_tmp;   
-                                 $output .= '<div class="al_year">'. $year .' 年</div><ul class="al_mon_list">'; //输出年份   
+                                 $output .= '<span class="label label-default">'. $year .' 年</span><ul class="al_mon_list" style="margin: 10px 0 40px 0;">'; //输出年份   
                              }   
-                             $output .= '<li>'.get_the_time('n-d').'<a href="'. get_permalink() .'">'. get_the_title() .'</a> </li>'; //输出文章日期和标题   
+                             $output .= '<li>'.get_the_time('n-d').'<a href="'. get_permalink() .'"> '. get_the_title() .'</a> </li>'; //输出文章日期和标题   
                         endwhile;
                         wp_reset_postdata();
                         $output .= '</ul></li></ul></div>';   

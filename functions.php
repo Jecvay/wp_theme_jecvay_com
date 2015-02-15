@@ -12,7 +12,7 @@
 	define( "THEMEPATH", get_bloginfo('template_directory') );
 
 	// 定义主题版本号
-	define( "THEMEVERSION", '1.13' );
+	define( "THEMEVERSION", '1.0' );
 
 	// 添加RSS
 	add_theme_support( 'automatic-feed-links' );
@@ -28,14 +28,15 @@
 	add_action('wp_enqueue_scripts', 'ms_scripts');
 	function ms_scripts() {
 		global $wp_scripts;
-
-		wp_enqueue_style('normalize', THEMEPATH . '/css/normalize.css', array(), THEMEVERSION, 'screen');
 		wp_enqueue_style('style', get_bloginfo('stylesheet_url'), array(), THEMEVERSION, 'screen');
+/*
+		wp_enqueue_style('normalize', THEMEPATH . '/css/normalize.css', array(), THEMEVERSION, 'screen');
 
 		wp_register_script( 'html5shiv', 'http://x.papaapp.com/farm1/a571d2/8dda131d/html5shiv.js',array(), '3.7.1');
 		$wp_scripts->add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 		wp_enqueue_script('html5shiv');
-	}
+*/
+  }
 
 	// Maupassant's widgets
 	function ms_widgets() {
@@ -56,7 +57,7 @@
 		global $wp_query, $paged;
 		$max_page = $wp_query->max_num_pages;
 		if ( $max_page == 1 ) return;
-		echo '<ol class="page-navigator">';
+		echo '<nav><ul class="pagination">';
 
 		if ( empty( $paged ) ) $paged = 1;
 		if ( $paged > 1 ) p_link( $paged - 1, '&laquo; Previous', '&laquo; Previous' );
@@ -67,7 +68,7 @@
 		if ( $paged < $max_page - $p - 1 ) echo '<li><span>...</span></li>';
 		if ( $paged < $max_page ) p_link( $paged + 1,'Next &raquo;', 'Next &raquo;' );
 
-		echo '</ol>';
+		echo '</ul></nav>';
 	}
 
 	function p_link( $i, $title = '', $linktype = '' ) {
@@ -90,7 +91,7 @@
 		global $post;
 		if (is_home()){
 			$keywords = 'Jecvay,刘杰威,计算机';
-			$description = '刘杰威 | Jecvay | 剧情稍微热血一点就会热泪盈眶';
+			$description = 'Jecvay Notes | Gook luck and Have fun';
 		}elseif (is_single()){
 			$keywords = get_post_meta($post->ID, "keywords", true);
 			if($keywords == ""){
@@ -121,11 +122,14 @@
 		$keywords = trim(strip_tags($keywords));
 		$description = trim(strip_tags($description));
 		?>
-<meta name="keywords" content="<?php echo $keywords; ?>" />
-<meta name="description" content="<?php echo $description; ?>" />
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
-<meta name="alexaVerifyID" content="XG6cRnhJYfOqlCGAAy2WK0csTw4"/>
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="<?php echo $keywords; ?>" />
+    <meta name="description" content="<?php echo $description; ?>" />
+    <meta name="author" content="Jecvay">
+    <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" type="image/x-icon" />
+    
 		<?php wp_head();?>
 	<?php 
 	}
