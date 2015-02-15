@@ -26,7 +26,8 @@
               <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
             </div>
             <p>
-              <?php the_content(' <br><br> <strong>阅读剩余部分 >> </strong>'); ?>
+              <?php the_content(''); ?>
+              <h4><a href="<?php the_permalink() ?>"><strong>阅读全文 >></strong></a></h4>
             </p>
           <?php endif; ?>
         </div>
