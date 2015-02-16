@@ -7,7 +7,7 @@
             <h2 style="margin: 30px 0;"><?php the_title() ?></h2>
           </div></div>
           <div class="row">
-            <div class="col-md-3 col-md-offset-9">
+            <div class="col-md-12 text-right">
               <h4><span class="label label-info"><?php the_time('F j, Y | H:i'); ?></span></h4>
             </div>
           </div>

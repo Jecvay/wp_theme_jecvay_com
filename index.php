@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
   <head>
     <?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>
     <link href='<?php echo get_template_directory_uri()."/bs/css/bootstrap.min.css";?>' rel="stylesheet">
