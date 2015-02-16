@@ -17,7 +17,7 @@
     <div class="container">
     <div class="row">
     <div class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
-      <nav id="site-navigation" class="navbar navbar-inverse" role="navigation" style="margin-top: 30px;">
+      <nav id="site-navigation" class="navbar navbar-default" role="navigation" style="margin-top: 30px; background-color: #fff;">
       <div class="container-fluid">
 
         <div class="navbar-header">
