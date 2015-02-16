@@ -2,17 +2,17 @@
 
 /**
  * 
- * @package Maupassant
- * @author cho, grafting by mufeng
- * @version 1.13
- * @link http://pagecho.com
+ * @package wp_theme_jecvay_com
+ * @author Jecvay, modified from cho
+ * @version 1.2
+ * @link http://jecvay.com
  */
 
 	// 定义主题路径
 	define( "THEMEPATH", get_bloginfo('template_directory') );
 
 	// 定义主题版本号
-	define( "THEMEVERSION", '1.1' );
+	define( "THEMEVERSION", '1.2' );
 
 	// 添加RSS
 	add_theme_support( 'automatic-feed-links' );

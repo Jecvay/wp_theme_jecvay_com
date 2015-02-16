@@ -12,6 +12,24 @@ p {
   padding: 8px 0;
 }
 
+blockquote {
+  font-size: 15px !important;
+  border: 3px solid #ddd;
+  border-left:3px solid #ddd !important;
+  border-radius: 10px;
+  background-color: #F4F9F5;
+}
+
+blockquote p {
+  line-height: 20px;
+}
+
+.crayon-theme-arduino-ide {
+  padding: 10px;
+  border: 3px solid #ddd !important;
+  border-radius: 10px;
+}
+
 .navbar {
   background-color: #febf04;
 }
