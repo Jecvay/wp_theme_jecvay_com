@@ -3,7 +3,24 @@ body {
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-p, ul {
+a:visited, a:hover, a:active, a:link, a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #22A386 !important;
+}
+
+::selection {
+  background: #25465A;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold !important;
+}
+
+p, ul, ol {
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 17px;
   line-height: 30px;
@@ -11,6 +28,14 @@ p, ul {
 
 p {
   padding: 8px 0;
+}
+
+.article ol, .article ul {
+  border: 3px #ddd;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
 }
 
 blockquote {
@@ -34,3 +59,21 @@ blockquote p {
 .navbar {
   background-color: #febf04;
 }
+
+.panel-body, .navbar {
+-moz-box-shadow:4px 4px 20px #333333 !important; 
+-webkit-box-shadow:4px 4px 20px #333333 !important; 
+box-shadow:4px 4px 20px #333333 !important;
+}
+
+.aligncenter {
+  display: block;
+  margin:0 auto;
+}
+
+.aligncenter p.wp-caption-text {
+  display: block;
+  margin-left: auto;
+  text-align: center;
+}
+

@@ -14,15 +14,25 @@
         padding: 5px;
       }
     </style>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1652508549bc531681d6e07c46680834";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
   </head>
 <body>
-<div class="container" style="margin-top: 30px;">
+<div class="container" style="margin-top: 30px">
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default">
-        <div class="panel-body">
+        <div class="panel-body" style="padding: 30px;">
           <?php if (have_posts()) : the_post();?>
-            <div class="page-header"  style="margin: 0px;">
+            <div class="page-header"  style="margin: 0px; ">
               <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
             </div>
             <p>
@@ -37,8 +47,8 @@
 
   <div class="row">
     <div class="col-md-7">
-      <div class="panel panel-default" style="min-height: 250px;padding-left: 30px;">
-        <div class="panel-body">
+      <div class="panel panel-default">
+        <div class="panel-body"  style="padding-left: 30px; min-height: 250px;">
           <h4 style="margin-top: 0px;"><span class="label label-default">最新文章</span><h3>
           <?php if (have_posts()) : while (have_posts()) : the_post();?>
             <h5 style="padding-left: 10px;"><a href="<?php the_permalink() ?>"><?php the_title() ?></a><br /></h5>
@@ -48,8 +58,8 @@
     </div>
     
     <div class="col-md-5">
-      <div class="panel panel-default" style="min-height: 250px;">
-        <div class="panel-body">
+      <div class="panel panel-default">
+        <div class="panel-body" style="min-height: 250px;">
           <div class="row">
             <div class="col-md-8" style="padding-left: 30px;">
               <h2 style="font-family: cursive;"> <?php bloginfo('name'); ?> </h2>
@@ -66,8 +76,6 @@
               <img src="/jectools/self.jpg" class="img-circle" style="width: 80px; height: 80px;">
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
@@ -75,7 +83,4 @@
 </div>
 </body>
 
-<script>
-  document.getElementById("site-navigation").hidden="hidden"; // 隐藏导航条
-</script>
 
