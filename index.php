@@ -23,7 +23,6 @@
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
-
   </head>
 <body>
 <div class="container" style="margin-top: 30px">
@@ -81,6 +80,7 @@
     </div>
   </div>
 </div>
+<?php wp_footer();?>
 </body>
 
-
+</html>
