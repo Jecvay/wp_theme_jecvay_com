@@ -25,7 +25,7 @@
     </script>
   </head>
 <body>
-<div class="container" style="margin-top: 30px">
+<div class="container" id="top-top" style="margin-top: 30px">
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default">
@@ -80,7 +80,27 @@
     </div>
   </div>
 </div>
-<?php wp_footer();?>
+    <script src='<?php echo get_template_directory_uri()."/bs/jquery/jquery-1.11.2.min.js";?>'></script>
+    <script src='<?php echo get_template_directory_uri()."/bs/js/bootstrap.min.js";?>'></script>
+    <script src='<?php echo get_template_directory_uri()."/bs/js/ie10-viewport-bug-workaround.js";?>'></script>
+ <?php wp_footer();?>
+
+  <script>
+    var setMarginTop = function() {
+      if ($(window).height() < 676) {
+        $("#top-top").attr("style", "margin-top: 10px;");
+      } else {
+        var style_str = "margin-top: " + ($(window).height() - 666) * 0.4 + "px;";
+        $("#top-top").attr("style", style_str);
+      }
+    };
+
+    $(function() {
+      setMarginTop();
+      $(window).resize(setMarginTop);
+    });
+  </script>
+
 </body>
 
 </html>
