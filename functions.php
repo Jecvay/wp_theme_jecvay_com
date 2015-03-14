@@ -28,7 +28,7 @@
 	add_action('wp_enqueue_scripts', 'ms_scripts');
 	function ms_scripts() {
 		global $wp_scripts;
-		wp_enqueue_style('style', get_bloginfo('stylesheet_url'), array(), THEMEVERSION, 'screen');
+		// wp_enqueue_style('style', get_bloginfo('stylesheet_url'), array(), THEMEVERSION, 'screen');
 /*
 		wp_enqueue_style('normalize', THEMEPATH . '/css/normalize.css', array(), THEMEVERSION, 'screen');
 

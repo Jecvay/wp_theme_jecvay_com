@@ -3,6 +3,7 @@
   <head>
     <?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>
     <link href='<?php echo get_template_directory_uri()."/bs/css/bootstrap.min.css";?>' rel="stylesheet">
+    <link href='<?php echo get_template_directory_uri()."/style.css";?>' rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -66,7 +67,7 @@
                 <li><a href="/about-me">关于我</a></li>
                 <li>文章: <a href="/archive"><?php echo wp_count_posts()->publish; ?></a> 篇</li>
                 <li>评论: <?php echo $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->comments");?> 条 </li>
-                <li>建站: <?php echo floor((time()-strtotime("2014-07-20"))/86400); ?> 天 </li>
+                <li>运行: <?php echo floor((time()-strtotime("2014-07-20"))/86400); ?> 天 </li>
               </ul>
               <h5 class="text-right" style="font-family: cursive;"><?php bloginfo('description'); ?></h5>
               
