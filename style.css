@@ -1,6 +1,10 @@
 body {
   background-color: #E9F5EF;
-  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft JHengHei", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft JHengHei", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 a:visited, a:hover, a:active, a:link, a {
@@ -25,7 +29,6 @@ h1, h2, h3, h4, h5 {
 }
 
 p, ul, ol {
-  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 17px;
   line-height: 30px;
 }
