@@ -8,7 +8,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="panel panel-default panel-body" style="padding: 50px; padding-top: 30px;">
           <div class="row"><div class="col-md-12">
-            <h2 style="margin: 30px 0;"><?php the_title() ?></h2>
+            <h2 id="title"><?php the_title() ?></h2>
           </div></div>
           <div class="row">
             <div class="col-md-12 text-right">

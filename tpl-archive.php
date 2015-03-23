@@ -22,7 +22,7 @@ get_header();
                      $year = $year_tmp;   
                      $output .= '<h3><span class="label label-default">'. $year .' 年</span></h3><ul class="al_mon_list" style="margin: 25px 0 60px 0;">'; //输出年份   
                  }   
-                 $output .= '<li style="padding: 2px;">'.get_the_time('n-d').'<a href="'. get_permalink() .'"> &nbsp &nbsp'. get_the_title() .'</a> </li>'; //输出文章日期和标题   
+                 $output .= '<li style="padding: 2px;">'.get_the_time('n-d').' &nbsp &nbsp<a href="'. get_permalink() .'">'. get_the_title() .'</a></li>'; //输出文章日期和标题   
             endwhile;
             wp_reset_postdata();
             $output .= '</ul></li></ul></div>';   
