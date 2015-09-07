@@ -73,7 +73,7 @@
               
             </div>
             <div class="col-md-4">
-              <img src="/jectools/self.jpg" class="img-circle" style="width: 80px; height: 80px;">
+              <img src="/tools/self.jpg" class="img-circle" style="width: 80px; height: 80px;">
             </div>
           </div>
         </div>
