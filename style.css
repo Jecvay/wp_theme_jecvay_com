@@ -118,3 +118,9 @@ img {
 a.navbar-brand.logo:hover {
   padding: 15px;
 }
+
+code {
+    background-color: #33545F;
+    color: #ddd;
+    margin: 0 5px;
+}
