@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
+h1, h2, h3 {
+    margin-top: 60px;
+}
+
 p, ul, ol {
   font-size: 17px;
   line-height: 30px;
@@ -72,7 +76,6 @@ a.navbar-brand.logo:hover {
 }
 
 blockquote {
-  font-size: 15px;
   border: 3px solid #ddd;
   border-left:3px solid #ddd;
   border-radius: 10px;
@@ -80,6 +83,7 @@ blockquote {
 }
 
 blockquote p {
+  font-size: 15px;
   line-height: 20px;
 }
 
