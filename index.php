@@ -3,7 +3,7 @@
   <head>
     <?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>
     <link href='<?php echo get_template_directory_uri()."/bs/css/bootstrap.min.css";?>' rel="stylesheet">
-    <link href='<?php echo get_template_directory_uri()."/style.css";?>' rel="stylesheet">
+    <link href='<?php echo get_template_directory_uri()."/style_index.css";?>' rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -20,7 +20,7 @@
       (function() {
         var hm = document.createElement("script");
         hm.src = "//hm.baidu.com/hm.js?1652508549bc531681d6e07c46680834";
-        var s = document.getElementsByTagName("script")[0]; 
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="col-md-5">
       <div class="panel panel-default">
         <div class="panel-body" style="min-height: 250px;">
@@ -70,7 +70,7 @@
                 <li><a href="/about-site">运行: <?php echo floor((time()-strtotime("2014-07-20"))/86400); ?> 天 </a></li>
               </ul>
               <h5 class="text-right" style="font-family: cursive;"><?php bloginfo('description'); ?></h5>
-              
+
             </div>
             <div class="col-md-4">
               <img src="/tools/self.jpg" class="img-circle" style="width: 80px; height: 80px;">
