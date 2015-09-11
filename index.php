@@ -66,7 +66,9 @@
               <ul class="list-unstyled" style="padding-left: 20px;">
                 <li><a href="/about-me">关于我</a></li>
                 <li><a href="/archive">文章: <?php echo wp_count_posts()->publish; ?> 篇</a></li>
-                <li>评论: <?php echo $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->comments");?> 条 </li>
+<!--
+                <li>评论: <?php // echo $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->comments");?> 条 </li>
+-->
                 <li><a href="/about-site">运行: <?php echo floor((time()-strtotime("2014-07-20"))/86400); ?> 天 </a></li>
               </ul>
               <h5 class="text-right" style="font-family: cursive;"><?php bloginfo('description'); ?></h5>

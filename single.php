@@ -1,5 +1,5 @@
-<?php 
-  get_header(); 
+<?php
+  get_header();
   global $wp;
   $current_url = home_url(add_query_arg(array(),$wp->request));
 ?>
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="panel panel-default panel-body article">
           <p>
             <?php the_content(); ?>
@@ -24,9 +24,11 @@
           </p>
         </div>
       <?php endwhile; endif;?>
+    <!--
       <div class="panel panel-default panel-body comments">
-        <?php comments_template(); ?>
+        <?php //comments_template(); ?>
       </div>
+    -->
     </div>
   </div>
 <?php get_footer(); ?>
