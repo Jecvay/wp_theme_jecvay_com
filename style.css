@@ -38,13 +38,18 @@ h1, h2, h3 {
     margin-top: 60px;
 }
 
-p, ul, ol {
+ul, ol {
   font-size: 17px;
-  line-height: 30px;
+}
+
+h3.widget-title {
+  margin: 0px;
 }
 
 p {
   padding: 8px 0;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 @media (min-width:1370px){.container{width:1370px}}
@@ -127,4 +132,59 @@ code {
     background-color: #33545F;
     color: #ddd;
     margin: 0 5px;
+}
+
+.comment {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+}
+
+.comment-list {
+	padding: 0;
+}
+
+.comment-author {
+	font-size: 15px;
+	display: inline-block;
+	border-style: solid;
+	border-color: #ccc;
+	border-radius: 5px;
+	border-width: 1px;
+	padding: 2px 5px;
+}
+
+.comment-reply {
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.comment-meta {
+	font-size: 15px;
+	float: right;
+	display: inline-block;
+}
+
+.comment-content {
+	margin-left: 20px;
+}
+
+.textarea {
+	width: 100%;
+	border-radius: 10px;
+	outline: none;
+	padding: 10px;
+}
+
+#author.text, #mail.text {
+	
+	margin-left: 10px;
+	border-radius: 3px;
+	outline: none;
+	padding: 0px 5px;
 }

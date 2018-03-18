@@ -143,15 +143,16 @@
 					<?php echo get_avatar( $comment, $size = '32'); ?>
 					<cite class="fn"><?php printf(__('%s'), get_comment_author_link()) ?></cite>
     			</div>
-    			<div class="comment-meta">
-					<?php printf(__('%s'), get_comment_date("Y/m/d") ) ?>
-            	</div>
-    			<div class="comment-content">
-    				<p><?php comment_text() ?></p>
-    			</div>
     			<div class="comment-reply">
     				<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => __('回复')))) ?>
     			</div>
+				<div class="comment-meta">
+					<?php printf(__('%s'), get_comment_date("Y/m/d") ) ?>
+            	</div>
+    			<div class="comment-content">
+    				<?php comment_text() ?>
+    			</div>
+
 			</div>
 	<?php
 	}	

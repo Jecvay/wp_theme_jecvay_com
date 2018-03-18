@@ -31,7 +31,7 @@
     <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-body" style="padding: 30px;">
-          <?php if (have_posts()) : the_post();?>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); if (in_category("说说")) : continue; endif;?>
             <div class="page-header"  style="margin: 0px; ">
               <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
             </div>
@@ -39,7 +39,8 @@
               <?php the_content(''); ?>
               <h4><a href="<?php the_permalink() ?>"><strong>阅读全文 >></strong></a></h4>
             </p>
-          <?php endif; ?>
+          <?php break; endwhile; endif; ?>
+			    <?php while(have_posts()) : the_post(); endwhile; ?>
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@
       <div class="panel panel-default">
         <div class="panel-body"  style="padding-left: 30px; min-height: 250px;">
           <h4 style="margin-top: 0px;"><span class="label label-default">最新文章</span><h3>
-          <?php if (have_posts()) : while (have_posts()) : the_post();?>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); if (in_category("说说")) : continue; endif; ?>
             <h5 style="padding-left: 10px;"><a href="<?php the_permalink() ?>"><?php the_title() ?></a><br /></h5>
           <?php endwhile; endif; ?>
         </div>

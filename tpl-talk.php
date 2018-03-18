@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: 归档 页面
+Template Name: 说说 页面
 */
 get_header();
 ?> 
@@ -12,7 +12,7 @@ get_header();
             $year=0; $mon=0; $i=0; $j=0;   
             $output = '<div id="archives">';   
             while ( $the_query->have_posts() ) : $the_query->the_post();
-						    if (in_category("说说")) {
+						    if (!in_category("说说")) {
 								    continue;
 								}
                 $year_tmp = get_the_time('Y');  

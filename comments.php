@@ -12,9 +12,9 @@
 
     <?php if ( have_comments() ) : ?>
         <h3 class="widget-title"><?php comments_popup_link('没人吐槽', '仅有 1 条吐槽', '多达 % 条吐槽'); ?></h3>
-        <ol class="comment-list">
+        <ul class="comment-list">
             <?php wp_list_comments('type=comment&callback=ms_comment'); ?>
-        </ol>
+        </ul>
         <?php paginate_comments_links('prev_text=«&next_text=»');?>
     <?php else : ?>
         <?php if ('open' != $post->comment_status) : ?>

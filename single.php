@@ -24,11 +24,9 @@
           </p>
         </div>
       <?php endwhile; endif;?>
-    <!--
       <div class="panel panel-default panel-body comments">
-        <?php //comments_template(); ?>
+        <?php comments_template(); ?>
       </div>
-    -->
     </div>
   </div>
 <?php get_footer(); ?>

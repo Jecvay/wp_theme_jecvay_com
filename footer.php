@@ -8,7 +8,7 @@
       <div class="container-fluid" id="footer" style="margin: 100px;">
         <div class="row">
           <div class="col-md-12 text-center">
-             Copyright © 2014 - 2015 Jecvay. All Rights Reserved.
+             Copyright © 2014 - 2016 Jecvay. All Rights Reserved.
          </div>
         </div>
       </div>
