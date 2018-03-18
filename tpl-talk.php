@@ -12,7 +12,8 @@ get_header();
             $year=0; $mon=0; $i=0; $j=0;   
             $output = '<div id="archives">';   
             while ( $the_query->have_posts() ) : $the_query->the_post();
-						    if (!in_category("说说")) {
+								if (!in_category("说说")) {
+										// 筛选出说说分类的文章
 								    continue;
 								}
                 $year_tmp = get_the_time('Y');  
@@ -23,12 +24,13 @@ get_header();
                  if ($year != $year_tmp && $year > 0) $output .= '</ul>';   
                  if ($year != $year_tmp) {   
                      $year = $year_tmp;   
-                     $output .= '<h3><span class="label label-default">'. $year .' 年</span></h3><ul class="al_mon_list" style="margin: 25px 0 60px 0;">'; //输出年份   
+                     $output .= '<h3 style="margin: 50px 0 30px 0"><span class="label label-default">'. $year .' 年</span></h3>'; //输出年份   
                  }   
-                 $output .= '<li style="padding: 2px;">'.get_the_time('n-d').' &nbsp &nbsp<a href="'. get_permalink() .'">'. get_the_title() .'</a></li>'; //输出文章日期和标题   
+                 $output .= '<ul class="al_mon_list" style="margin: 10px 0 10px 0;"><li style="padding: 2px;"><a href="'. get_permalink() .'">'.get_the_time('n-d H:i').'</a> &nbsp &nbsp'. get_the_content('') .'</li></ul>'; //输出文章日期和标题   
             endwhile;
             wp_reset_postdata();
             $output .= '</ul></li></ul></div>';   
+						$output .= '<div style="margin: 0 0 100px 0;"></div>';
             echo $output;   
           ?>
       </div>
