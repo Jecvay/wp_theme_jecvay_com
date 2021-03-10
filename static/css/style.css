@@ -113,7 +113,8 @@ html, body {
 }
 
 body {
-    font: 16px/1em 'Noto Serif SC', 'EB Garamond', serif;
+    font-size: 16px/1em;
+    font-family: 'Noto Serif SC', 'EB Garamond', serif;
     color: #000;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -817,10 +818,13 @@ h2.month {
         font-size: 13px;
     }
     .post h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .post h2 {
         font-size: 20px;
+    }
+    .post h3 {
+        font-size: 16px;
     }
 }
 
@@ -1155,6 +1159,9 @@ pre code {
     width: 100%;
     padding: 10px;
     height: 200px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888;
     border-color: #eee;
     border-radius: 10px;
     border-width: 3px;
@@ -1165,4 +1172,38 @@ pre code {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+.reply-2 input {
+    margin: 0 10px;
+    width: 40%;
+    font-size: 16px;
+    color: #888;
+    border-bottom: 1px solid #dbdbdb;  
+    border-top:0px;  
+    border-left:0px;  
+    border-right:0px;
+    
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.reply-2 button {
+    color: #888;
+    padding: 2px 20px;
+    font-size: 15px;
+}
+
+.reply-2 {
+    color: #888;
+}
+
+@media screen and (max-width: 540px) {
+    .reply-2 input {
+        width: 90%;
+    }
 }
