@@ -176,6 +176,10 @@ nav.main-nav a {
     border-radius: 3px;
 }
 
+.main-nav span:first-child {
+    display: none;
+}
+
 nav.main-nav a.cta {
     margin-left: 0px;
 }
