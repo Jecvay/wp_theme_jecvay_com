@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<div class="error-page">
-	<h2 class="post-title">404 - <?php _e('Are you kidding me?'); ?></h2>
-	<p><?php _e('你想查看的页面不在我这里'); ?></p>
-</div>
+
+<section id="wrapper" class="home">
+    <div class="archive">
+	<h2 style='font-size:100px;text-align: center;margin:200px 0;'>404</h2>
+	</div>
+</section>
 <style>#nav-menu{visibility: hidden;}</style>
 <?php get_footer(); ?>
