@@ -171,4 +171,12 @@ function remove_open_sans() {
 add_action('init', 'remove_open_sans');
 /* WordPress關閉Google Open Sans字體結束（由AREFLY.COM製作） */
 
+/* 强制在新窗口中打开 <a> */
+function mdc_target_blank($content) {
+    $post_string = $content;
+    $post_string = str_replace('<a', '<a target="_blank"', $post_string);
+    return $post_string;
+}
+add_filter( 'the_content', 'mdc_target_blank' );
+
 ?>

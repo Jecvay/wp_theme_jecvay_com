@@ -9,6 +9,38 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
 }
 
+
+/* 图片默认是无圆角的css，把他强制圆角 */
+.wp-block-image:not(.is-style-rounded) img {
+	border-radius: 5px;
+	height: 100%;
+	weight: 100%;
+}
+
+.wp-block-image img {
+	height: 100%;
+	weight: 100%;
+}
+
+/* 图片下面的说明文字 */
+figure {
+    border: thin #c0c0c0 solid;
+		border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+figcaption {
+    /* background-color: #222; */
+    color: #AAA;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block
 }
