@@ -30,7 +30,7 @@ figure {
 		border-radius: 5px;
     display: flex;
     flex-flow: column;
-    max-width: 800px;
+    max-width: 747px;
     margin: auto;
 }
 
@@ -196,7 +196,7 @@ nav.main-nav {
     margin: 20px auto;
     text-align: right;
     z-index: 100;
-    max-width: 750px;
+    max-width: 800px;
 }
 nav.main-nav a {
     top: 8px;
@@ -593,7 +593,7 @@ Post List
 #header {}
 
 #wrapper.post {
-    max-width: 690px;
+    max-width: 747px;
 }
 
 
