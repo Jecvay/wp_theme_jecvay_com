@@ -9,6 +9,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
 }
 
+.wp-block-image {
+	margin: 1em;
+}
 
 /* 图片默认是无圆角的css，把他强制圆角 */
 .wp-block-image:not(.is-style-rounded) img {
@@ -24,7 +27,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* 图片下面的说明文字 */
 figure {
-    border: thin #c0c0c0 solid;
 		border-radius: 5px;
     display: flex;
     flex-flow: column;
@@ -43,10 +45,6 @@ figcaption {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block
-}
-
-body {
-    line-height: 1
 }
 
 blockquote, q {
@@ -145,12 +143,16 @@ html, body {
 }
 
 body {
-    font-size: 16px/1em;
-    font-family: 'Noto Serif SC', 'EB Garamond', serif;
+    font-size: 18px;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;*/
+		font-family: "Times New Roman", Times, "Noto Serif SC", serif;
     color: #000;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    /* text-shadow: 0px 0.1px 0.1px #929292; */
+		line-height: 1.7em;
+		font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* font-family: 'Times New Roman', serif; */
 }
 
 .profile {
@@ -177,18 +179,15 @@ body {
 }
 
 .profile h1 {
-    font-weight: 900;
-    letter-spacing: 0px;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 60px;
     color: #222;
 }
 
 .profile h2 {
     font-size: 20px;
-    font-weight: 300;
     color: #aaa;
     margin-top: 10px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
@@ -204,7 +203,7 @@ nav.main-nav a {
     right: 6px;
     padding: 8px 12px;
     color: #5badf0;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.35;
     border-radius: 3px;
 }
@@ -306,7 +305,6 @@ ul>li {
 
 
 #post-body, p {
-    line-height: 1.8em;
     text-align: justify;
     margin-bottom: 1.4em;
 }
@@ -328,7 +326,7 @@ em, i {
 #title {
     display: inline-block;
     line-height: 100%;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 19px;
     margin: 0;
     padding-bottom: 20px;
@@ -336,19 +334,18 @@ em, i {
 
 .description {
     float: right;
-    font: italic 14px/1.4em Georgia, serif;
+    font: italic 14px/1.4em;
     color: #aaa;
 }
 
 .home h1 {
     font-size: 30px;
-    letter-spacing: -1px;
     color: #222;
     font-weight: bold;
 }
 
 .home h2 {
-    font: italic 19px/1.3em 'Noto Serif SC', 'EB Garamond', serif;
+    font: italic 19px/1.3em;
     color: #bbb;
 }
 
@@ -358,7 +355,6 @@ em, i {
 
 .post {
     margin: auto;
-    font-family: 'Noto Serif SC', 'EB Garamond', serif;
 }
 
 .post a {
@@ -386,17 +382,17 @@ em, i {
 }
 
 .post h1 {
-    letter-spacing: 3px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: #666;
-    font: 900 2.4em 'Noto Serif SC', 'EB Garamond', serif;
+    color: #3e3e3e;
+		font-size: 2.4em;
+    font-weight: bold;
+		line-height: normal;
 }
 
 .post h2 {
     margin-top: 45px;
     margin-bottom: 20px;
-    font-family: 'Noto Serif SC', 'EB Garamond', serif;
     font-size: 1.8em;
     font-weight: bold;
     color: #666;
@@ -405,7 +401,8 @@ em, i {
 .post h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-    font: 800 1.4em 'Noto Serif SC', 'EB Garamond', serif;
+		font-size: 1.4em;
+		font-weight: bold;
     color: #666;
 }
 
@@ -414,7 +411,6 @@ em, i {
     margin: -5px 0 0 0;
     color: #b2b9be;
     font-size: 13px;
-    letter-spacing: 1px;
     display: inline-block;
 }
 
@@ -424,7 +420,6 @@ em, i {
     color: #b2b9be;
     font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-top: 5px;
     display: block;
 }
@@ -438,7 +433,6 @@ em, i {
 p.small {
     color: #bbb;
     font-size: 14px;
-    line-height: 1.5;
     display: block;
     text-align: center;
     margin-top: 20px;
@@ -449,7 +443,6 @@ blockquote {
     border-left: 3px solid #eee;
     margin: 20px 20px 20px 27px;
     color: #777;
-    font-weight: 500;
 }
 
 hr {
@@ -465,7 +458,6 @@ table {
     margin: 40px 0;
     border-collapse: collapse;
     font-size: 13px;
-    line-height: 1.5em;
 }
 
 th, td {
@@ -514,7 +506,6 @@ img {
     text-align: center;
     margin: 0px auto;
     color: #999;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     /* 不可选中 */
     -webkit-touch-callout: none;
@@ -609,7 +600,6 @@ Post List
 #post-meta {
     font-size: 13px;
     font-weight: bold;
-    line-height: 1.4;
     border-top: 1px solid #eee;
     padding-top: 40px;
     margin-bottom: 40px;
@@ -621,7 +611,7 @@ Post List
 
 #post-meta div span {
     color: #aaa;
-    font-weight: 500;
+    font-weight: bold;
     display: block;
 }
 
@@ -659,7 +649,7 @@ Post List
     text-align: center;
     padding-top: 20px;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 40px;
 }
 
@@ -728,7 +718,7 @@ h2.month {
 
 .list-title h2 {
     text-align: center;
-    font: 800 2em 'Noto Serif SC', 'EB Garamond', serif;
+    font: 800 2em;
     color: #aaa;
 }
 
@@ -746,7 +736,7 @@ h2.month {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 400 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -787,7 +777,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates {
-    font: 300 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 400 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 #disqus_thread, #ds-thread {
@@ -891,7 +881,7 @@ h2.month {
 }
 
 .archive h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px 0 20px 0;
 }
 
@@ -902,9 +892,8 @@ h2.month {
 .archive .post-link {
     color: #8a8a8a;
     flex: 1;
-    font-size: 1em;
+    font-size: 18px;
     padding-right: 1em;
-    line-height: 1.5em;
 }
 
 .archive .post-item:hover {
@@ -993,7 +982,6 @@ a.symbol:hover {
     background-color: #fff;
     font-size: 11px;
     padding: 2px 3px;
-    font-weight: 100;
 }
 
 /**
@@ -1045,21 +1033,28 @@ a.symbol:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    max-width: 650px;
+    max-width: 747px;
 }
 
 .summary h1 {
     font-size: 30px;
+		font-weight: bold;
     color: #888;
 }
 
 .summary-content h2, h3, h4 {
-    margin: 20px 0;
+    margin: 0;
     color: #aaa;
 }
 
+.summary h2 {
+		font-weight: bold;
+    font-size: 23px;
+		line-height: 1.8em;
+}
+
 .summary-title {
-    margin: 20px 0;
+  margin: 0;
 	line-height: 1.2;
 }
 
@@ -1071,17 +1066,18 @@ a.symbol:hover {
     display: inline-block;
     color: #333;
     margin-top: 20px;
-    line-height: 1.8em;
     text-align: justify;
 }
 
+/*
 .summary-content img {
     max-width: 70%;
     margin: 10px auto;
 }
+*/
 
 .summary-read-more {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 }
 
 ::selection {
@@ -1092,7 +1088,7 @@ a.symbol:hover {
 .about-days {
     float: right;
     border-radius: 5px;
-    background-color: #888;
+    background-color: #888;3
     padding: 5px 10px;
     color: #eee;
 }
@@ -1129,7 +1125,7 @@ pre code {
 }
 
 .copyright {
-    margin: 0 0 300px 0;
+    margin: 0 0 100px 0;
 }
 
 .pagination {
@@ -1179,7 +1175,7 @@ pre code {
 
 .comment-meta {
     color: #888;
-    margin: 0 10px;
+    margin: 0 10px
 }
 
 .comment-content p {
