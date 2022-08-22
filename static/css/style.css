@@ -145,7 +145,7 @@ html, body {
 body {
     font-size: 18px;
     /*font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;*/
-		font-family: "Times New Roman", Times, "Noto Serif SC", serif;
+		font-family: "Times New Roman", "Noto Serif SC", serif;
     color: #000;
 		line-height: 1.7em;
 		font-weight: normal;
@@ -718,8 +718,9 @@ h2.month {
 
 .list-title h2 {
     text-align: center;
-    font: 800 2em;
     color: #aaa;
+		font-weight: bold;
+		font-size: 35px;
 }
 
 #archive-list li:last-child {

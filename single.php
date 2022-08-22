@@ -21,13 +21,11 @@
       </header>
       <section id="post-body">
         <?php the_content(); ?>
-<!--
         <hr>
         <div class="this-post"><a href=<?php echo "$current_url"?>>本文链接</a></div>
--->
       </section>
     </article>
-    <?php /*comments_template();*/ ?>
+    <?php comments_template(); ?>
   </section>
   <?php endwhile; endif;?>
 <?php get_footer(); ?>
