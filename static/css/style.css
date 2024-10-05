@@ -143,9 +143,11 @@ html, body {
 }
 
 body {
-    font-size: 18px;
+    font-size: 20px;
     /*font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;*/
-		font-family: "Times New Roman", "Noto Serif SC", serif;
+		/*font-family: "Times New Roman", "Noto Serif SC", serif;*/
+		/*font-weight: 500;*/
+    font-family: "Noto Serif SC", serif;
     color: #000;
 		line-height: 1.7em;
 		font-weight: normal;
@@ -385,7 +387,7 @@ em, i {
     margin-top: 60px;
     margin-bottom: 30px;
     color: #3e3e3e;
-		font-size: 2.4em;
+		font-size: 1.8em;
     font-weight: bold;
 		line-height: normal;
 }
@@ -393,7 +395,7 @@ em, i {
 .post h2 {
     margin-top: 45px;
     margin-bottom: 20px;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: bold;
     color: #666;
 }
@@ -401,7 +403,31 @@ em, i {
 .post h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-		font-size: 1.4em;
+		font-size: 1.2em;
+		font-weight: bold;
+    color: #666;
+}
+
+.post h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+		font-size: 1.0em;
+		font-weight: bold;
+    color: #666;
+}
+
+.post h5 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+		font-size: 1.0em;
+		font-weight: bold;
+    color: #666;
+}
+
+.post h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+		font-size: 1.0em;
 		font-weight: bold;
     color: #666;
 }
@@ -1037,18 +1063,12 @@ a.symbol:hover {
     max-width: 747px;
 }
 
-.summary h1 {
-    font-size: 30px;
-		font-weight: bold;
-    color: #888;
-}
-
-.summary-content h2, h3, h4 {
+.summary-content h1, h2, h3, h4 {
     margin: 0;
     color: #aaa;
 }
 
-.summary h2 {
+.summary h1, h2 {
 		font-weight: bold;
     font-size: 23px;
 		line-height: 1.8em;
@@ -1057,10 +1077,13 @@ a.symbol:hover {
 .summary-title {
   margin: 0;
 	line-height: 1.2;
+	display: inline;
 }
 
-.summary-title a, a:hover {
+.summary-title a, .summary-title a:hover {
     color: inherit;
+		padding-left: 5px;
+		border-left: 5px solid #576aa2;
 }
 
 .summary-content {

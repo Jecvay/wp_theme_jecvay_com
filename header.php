@@ -6,6 +6,8 @@
 	<head>
 	<?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>
 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/static/css/style.css";?>">
+		<link type='text/css' rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&display=swap">
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53077626-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -22,8 +24,6 @@
 			  s.parentNode.insertBefore(hm, s);
 			})();
 		</script>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/static/css/style.css";?>">
-		<link type='text/css' rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&display=swap">
 <!--
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@700&display=swap" media=print onload="this.media='all'">
 		<noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@700&display=swap"></noscript>
