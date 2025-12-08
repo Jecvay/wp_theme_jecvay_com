@@ -1,9 +1,7 @@
-/* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
     margin: 0;
     padding: 0;
@@ -140,18 +138,20 @@ table {
 
 html, body {
     height: 100%;
+		-webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
-    font-size: 20px;
-    /*font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;*/
-		/*font-family: "Times New Roman", "Noto Serif SC", serif;*/
-		/*font-weight: 500;*/
-    font-family: "Noto Serif SC", serif;
-    color: #000;
-		line-height: 1.7em;
-		font-weight: normal;
-}
+		font-size: 20px;
+    font-family: "Noto Serif SC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;;
+		background-color: #f9f8f6;
+    color: #141413;
+    line-height: 1.7em;
+    font-weight: 500;
+    font-style: normal;
+    -moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: subpixel-antialiased;
 
 h1, h2, h3, h4, h5, h6 {
 	/* font-family: 'Times New Roman', serif; */

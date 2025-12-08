@@ -7,7 +7,11 @@
 	<?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/static/css/style.css";?>">
-		<link type='text/css' rel=stylesheet href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&display=swap">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53077626-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
