@@ -956,9 +956,41 @@ a.symbol:hover {
     max-width: 747px;
 }
 
-.summary-content h1, h2, h3, h4 {
-    margin: 0;
-    color: #aaa;
+.summary-content h1, 
+.summary-content h2, 
+.summary-content h3, 
+.summary-content h4, 
+.summary-content h5, 
+.summary-content h6 {
+    font-size: 1.1em !important;
+    font-weight: bold;
+    color: #444;
+    margin: 1.5em 0 0.5em 0;
+    border: none;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+.summary-content h1::before, 
+.summary-content h2::before, 
+.summary-content h3::before, 
+.summary-content h4::before,
+.summary-content h5::before,
+.summary-content h6::before {
+    content: "【 ";
+    color: #888;
+    font-weight: normal;
+}
+
+.summary-content h1::after, 
+.summary-content h2::after, 
+.summary-content h3::after, 
+.summary-content h4::after,
+.summary-content h5::after,
+.summary-content h6::after {
+    content: " 】";
+    color: #888;
+    font-weight: normal;
 }
 
 .summary h1, h2 {
