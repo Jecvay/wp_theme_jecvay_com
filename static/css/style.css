@@ -49,12 +49,12 @@ em, i {
 
 a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
-    color: #5694f1;
+    color: #3d5467;
     transition: all 0.15s ease;
 }
 
 p a {
-    color: #5694f1;
+    color: #3d5467;
 }
 
 #post-nav a, #post-list a {
@@ -170,7 +170,7 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
+    color: #3d5467;
     font-size: 18px;
     line-height: 1.35;
     border-radius: 3px;
@@ -611,7 +611,7 @@ h2.month {
 }
 
 #archive-list li a:hover, #archive-list li:hover .dates {
-    color: #5694f1;
+    color: #3d5467;
 }
 
 #archive-link {
@@ -624,9 +624,9 @@ h2.month {
 }
 
 #archive-link:hover {
-    background: #5694f1;
+    background: #3d5467;
     color: #fff;
-    box-shadow: 0 0 0 1px #5694f1;
+    box-shadow: 0 0 0 1px #3d5467;
 }
 
 #archive-link span {
@@ -673,7 +673,7 @@ h2.month {
 }
 
 .archive .post-item:hover, .archive .post-item:hover .post-link {
-    color: #5694f1;
+    color: #3d5467;
     transition: 0.3s ease-out;
 }
 
@@ -692,7 +692,7 @@ h2.month {
 
 #post-list.archive.readmore a {
     font: 400 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
-    color: #5694f1;
+    color: #3d5467;
 }
 
 #post-list.archive.readmore a:hover {
@@ -934,7 +934,7 @@ a.symbol:hover {
 }
 
 .page-tags ul li a:hover {
-    color: #5694f1;
+    color: #3d5467;
 }
 
 .tags a {
@@ -1008,7 +1008,7 @@ a.symbol:hover {
 .summary-title a, .summary-title a:hover {
     color: inherit;
     padding-left: 10px;
-    border-left: 5px solid #5694f1;
+    border-left: 5px solid #3d5467;
 }
 
 .summary-content {
@@ -1057,7 +1057,7 @@ a.symbol:hover {
         top: 8px;
         right: 6px;
         padding: 8px 8px;
-        color: #5badf0;
+        color: #3d5467;
         font-size: 13px;
         line-height: 1.35;
         border-radius: 3px;
