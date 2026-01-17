@@ -983,16 +983,6 @@ a.symbol:hover {
     line-height: 1.6em;
 }
 
-.summary-content h1::before, 
-.summary-content h2::before {
-    content: "【 ";
-}
-
-.summary-content h1::after, 
-.summary-content h2::after {
-    content: " 】";
-}
-
 .summary h1, h2 {
     font-weight: bold;
     font-size: 26px;
