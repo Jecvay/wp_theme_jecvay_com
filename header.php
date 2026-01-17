@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-   //add_filter('show_admin_bar', '__return_false'); // hide admin bar
-?>
 <html lang="zh-CN">
 	<head>
 	<?php ms_head(); /* 生成 keyword 和 description icon 等等信息.*/ ?>

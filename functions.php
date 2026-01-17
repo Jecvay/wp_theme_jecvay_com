@@ -29,13 +29,6 @@
 	function ms_scripts() {
 		global $wp_scripts;
 		// wp_enqueue_style('style', get_bloginfo('stylesheet_url'), array(), THEMEVERSION, 'screen');
-/*
-		wp_enqueue_style('normalize', THEMEPATH . '/css/normalize.css', array(), THEMEVERSION, 'screen');
-
-		wp_register_script( 'html5shiv', 'http://x.papaapp.com/farm1/a571d2/8dda131d/html5shiv.js',array(), '3.7.1');
-		$wp_scripts->add_data( 'html5shiv', 'conditional', 'lt IE 9' );
-		wp_enqueue_script('html5shiv');
-*/
   }
 
 	// Maupassant's widgets

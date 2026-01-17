@@ -10,14 +10,6 @@
     <article>
       <header>
         <h1><?php the_title() ?></h1>
-<!--
-        <h2 class="headline">
-        <?php the_time('F j, Y | H:i');?>
-          <span class="tags">
-          
-          </span>
-        </h2>
--->
       </header>
       <section id="post-body">
         <?php the_content(); ?>
