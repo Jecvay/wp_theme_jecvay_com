@@ -972,25 +972,13 @@ a.symbol:hover {
 }
 
 .summary-content h1::before, 
-.summary-content h2::before, 
-.summary-content h3::before, 
-.summary-content h4::before,
-.summary-content h5::before,
-.summary-content h6::before {
+.summary-content h2::before {
     content: "【 ";
-    color: #888;
-    font-weight: normal;
 }
 
 .summary-content h1::after, 
-.summary-content h2::after, 
-.summary-content h3::after, 
-.summary-content h4::after,
-.summary-content h5::after,
-.summary-content h6::after {
+.summary-content h2::after {
     content: " 】";
-    color: #888;
-    font-weight: normal;
 }
 
 .summary h1, h2 {
