@@ -820,9 +820,21 @@ p.small {
 }
 
 .reply-2 button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
     color: #888;
-    padding: 2px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 20px;
     font-size: 15px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.reply-2 button:hover {
+    color: #3d5467;
+    border-color: #3d5467;
 }
 
 /* Pagination */
