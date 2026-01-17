@@ -995,12 +995,6 @@ a.symbol:hover {
     display: inline;
 }
 
-.summary-title a, .summary-title a:hover {
-    color: inherit;
-    padding-left: 10px;
-    border-left: 5px solid #3d5467;
-}
-
 .summary-content {
     display: inline-block;
     color: #333;
