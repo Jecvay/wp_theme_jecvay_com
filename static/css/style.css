@@ -260,27 +260,37 @@ nav.main-nav a.cta {
 }
 
 .post h2 {
-    margin-top: 45px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bold;
-    color: #666;
+    color: #2b2b2b;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 
 .post h3 {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.35em;
     font-weight: bold;
-    color: #666;
+    color: #2b2b2b;
 }
 
-.post h4, .post h5, .post h6 {
+.post h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.post h5, .post h6 {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 1.0em;
     font-weight: bold;
-    color: #666;
+    color: #555;
 }
 
 .post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol, pre {
