@@ -143,18 +143,19 @@ html, body {
 }
 
 body {
-		font-size: 20px;
-    font-family: "Noto Serif SC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;;
+		font-size: 18px;
+    /*font-family: "Noto Serif SC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;*/
+    font-family: "Noto Sans SC",sans-serif;
 		background-color: #f9f8f6;
-    color: #141413;
-    line-height: 1.7em;
-    font-weight: 500;
+    color: #2b2b2b;
+    line-height: 1.8;
+    font-weight: 400;
     font-style: normal;
-    -moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: subpixel-antialiased;
 
 h1, h2, h3, h4, h5, h6 {
-	/* font-family: 'Times New Roman', serif; */
+    font-family: "Noto Serif SC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+		font-weight: 600;
 }
 
 .profile {
@@ -163,8 +164,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile #wrapper {
     /*padding: 60px 40px 0px;*/
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto;
+		padding: 40px 20px;
 }
 
 .profile #header {
@@ -308,6 +310,7 @@ ul>li {
 
 #post-body, p {
     text-align: justify;
+		text-justify: inter-ideograph;
     margin-bottom: 1.4em;
 }
 
