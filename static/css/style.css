@@ -952,7 +952,7 @@ a.symbol:hover {
 .summary {
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 747px;
 }
 
@@ -963,8 +963,8 @@ a.symbol:hover {
 
 .summary h1, h2 {
     font-weight: bold;
-    font-size: 23px;
-    line-height: 1.8em;
+    font-size: 26px;
+    line-height: 1.4em;
 }
 
 .summary-title {
@@ -975,8 +975,8 @@ a.symbol:hover {
 
 .summary-title a, .summary-title a:hover {
     color: inherit;
-    padding-left: 5px;
-    border-left: 5px solid #576aa2;
+    padding-left: 10px;
+    border-left: 5px solid #5694f1;
 }
 
 .summary-content {
@@ -987,7 +987,7 @@ a.symbol:hover {
 }
 
 .summary-read-more {
-    margin: 0 0 20px 0;
+    margin: 15px 0 20px 0;
 }
 
 .about-days {
